@@ -1,0 +1,20 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<address>
+    ИграСтрой<br />
+    Мира, 30/1<br />
+    <abbr title="телефон">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Тех. поддержка:</strong>   <a href="mailto:Играстрой@gmail.com">Играстрой@gmail.com</a><br />
+    <strong>Отдел обработки предложений:</strong> <a href="mailto:Играстроймарк@gmail.com">Играстроймарк@gmail.com</a>
+</address>
+
+{% endblock %}
