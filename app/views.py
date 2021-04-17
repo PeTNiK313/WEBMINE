@@ -107,8 +107,8 @@ def registration(request):
         request,
         'app/registration.html',
          {
-            'regform': regform,
-            'year': datetime.now().year,
+             'regform': regform,
+             'year': datetime.now().year,
          }
     )
 
