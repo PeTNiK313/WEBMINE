@@ -102,15 +102,15 @@ def registration(request):
         regform = UserCreationForm()
          
 
-        assert isinstance(request, HttpRequest)
-        return render(
-            request,
-            'app/registration.html',
-            {
-                'regform': regform,
-                'year': datetime.now().year,
-            }
-        )
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/registration.html',
+         {
+            'regform': regform,
+            'year': datetime.now().year,
+         }
+    )
 
 def blog(request):
     posts = Blog.objects.all()
